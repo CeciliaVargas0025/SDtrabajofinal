@@ -5,7 +5,6 @@ WORKDIR /app
 COPY src/main/java/Productor.java .
 COPY pom.xml .
 
-# Descarga dependencias
 RUN curl -L -o amqp-client-5.16.0.jar \
     https://repo1.maven.org/maven2/com/rabbitmq/amqp-client/5.16.0/amqp-client-5.16.0.jar && \
     curl -L -o slf4j-api-1.7.36.jar \
@@ -13,8 +12,8 @@ RUN curl -L -o amqp-client-5.16.0.jar \
     curl -L -o slf4j-simple-1.7.36.jar \
     https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar
 
-# Compilación
+
 RUN javac -cp "amqp-client-5.16.0.jar:slf4j-api-1.7.36.jar" Productor.java
 
-# Comando que mantiene el contenedor activo
+
 CMD ["sh", "-c", "while true; do java -cp .:amqp-client-5.16.0.jar:slf4j-api-1.7.36.jar:slf4j-simple-1.7.36.jar Productor; sleep 10; done"]
