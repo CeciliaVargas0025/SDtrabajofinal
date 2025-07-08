@@ -13,7 +13,7 @@ Simular una comunicación asíncrona entre un emisor (productor) y un receptor (
 1. Clona el repositorio y abre la carpeta:
    
    git clone  https://github.com/CeciliaVargas0025/SDtrabajofinal.git 
-   
+
     cd SDtrabajofinal
    
 
@@ -21,10 +21,6 @@ Simular una comunicación asíncrona entre un emisor (productor) y un receptor (
    
    docker-compose up --build
    
-
- nombre  del container:
- docker ps
-
 
 3. En una terminal nueva, conectarse al emisor para enviar mensajes:
 
