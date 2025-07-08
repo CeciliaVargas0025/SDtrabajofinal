@@ -13,6 +13,7 @@ Simular una comunicación asíncrona entre un emisor (productor) y un receptor (
 1. Clona el repositorio y abre la carpeta:
    
    git clone  https://github.com/CeciliaVargas0025/SDtrabajofinal.git 
+   
     cd SDtrabajofinal
    
 
