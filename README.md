@@ -59,9 +59,10 @@ Este proyecto implementa un sistema de mensajería asíncrona utilizando RabbitM
 
     En el panel de RabbitMQ, navegar a:
     Queues > chat_fila > Get Message se ven los mensajes escritos por el productor 
-    
+
+    Los mensajes permanecen en "Ready" hasta ser confirmados
     Los mensajes no se borran hasta que el receptor confirme (ACK)
-   
+    
 7.  Reinicia el recepetor
    docker start sdtrabajofinal-receptor-1
 
