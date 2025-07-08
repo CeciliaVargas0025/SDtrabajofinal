@@ -26,13 +26,13 @@ Este proyecto implementa un sistema de mensajería asíncrona utilizando RabbitM
 
    docker ps
 
-Se debe ver tres servicios activos:
+   Se debe ver tres servicios activos:
 
-sdtrabajofinal-rabbitmq-1
+   sdtrabajofinal-rabbitmq-1
 
-sdtrabajofinal-emisor-1
+   sdtrabajofinal-emisor-1
 
-sdtrabajofinal-receptor-1
+   sdtrabajofinal-receptor-1
 
 4. En una terminal nueva, conectarse al emisor para enviar mensajes:
 
