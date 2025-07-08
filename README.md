@@ -49,12 +49,14 @@ Este proyecto implementa un sistema de mensajería asíncrona utilizando RabbitM
 5. Detener el receptor para ver la cola en Rabbit:
 
    docker stop sdtrabajofinal-receptor-1
+   
    luego se escriben varios mensajes desde el productor
 
 6. Acceder al panel de control de RabbitMQ:
    - URL: [http://localhost:15672](http://localhost:15672)
    - Usuario: usuario
    - Contraseña: clave123
+
     En el panel de RabbitMQ, navegar a:
     Queues > chat_fila > Get Message se ven los mensajes escritos por el productor 
     Los mensajes no se borran hasta que el receptor confirme (ACK)
