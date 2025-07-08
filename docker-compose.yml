@@ -1,0 +1,28 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: usuario
+      RABBITMQ_DEFAULT_PASS: clave123
+      
+
+  emisor:
+    build:
+      context: .
+      dockerfile: DockerfileProductor
+    depends_on:
+      - rabbitmq
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+  receptor:
+      build:
+        context: .
+        dockerfile: DockerfileConsumidor
+      depends_on:
+        - rabbitmq
+      restart: unless-stopped
