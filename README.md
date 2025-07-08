@@ -13,6 +13,7 @@ Este proyecto implementa un sistema de mensajería asíncrona utilizando RabbitM
 1. Clona el repositorio y abre la carpeta:
    
    git clone https://github.com/CeciliaVargas0025/SDtrabajofinal.git
+
 cd SDtrabajofinal
    
 
@@ -20,7 +21,8 @@ cd SDtrabajofinal
    
    docker-compose up --build
    
-   3. Verificar contenedores en ejecución
+3. Verificar contenedores en ejecución
+
 docker ps
 
 Se debe ver tres servicios activos:
